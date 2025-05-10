@@ -7,7 +7,6 @@ import WhatsAppButton from "@/components/whatsapp-button"
 import RegistrationForm from "@/components/registration-form"
 import ImageCarousel from "@/components/image-carousel"
 import FAQSection from "@/components/faq-section"
-import SystemDiagram from "@/components/system-diagram"
 
 export default function Home() {
   // Testimonial data
@@ -377,12 +376,10 @@ export default function Home() {
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2">Produk Premium Lainnya</h3>
-                  <p className="text-muted-foreground mb-4">
-                    Rangkaian produk suplemen kesehatan dan skincare 
-                  </p>
+                  <p className="text-muted-foreground mb-4">Rangkaian produk suplemen kesehatan dan skincare</p>
                   <ul className="space-y-2">
                     {[
-                      "Produk kesehatan dengan standar internasional",
+                      "Produk suplemen kesehatan dengan standar internasional",
                       "Formulasi khusus untuk hasil optimal",
                       "Bahan-bahan premium berkualitas tinggi",
                       "Mendukung gaya hidup sehat dan berkualitas",
@@ -412,9 +409,7 @@ export default function Home() {
             <div className="mt-12">
               <div className="text-center mb-8">
                 <h3 className="text-2xl font-bold">Legalitas Produk</h3>
-                <p className="text-muted-foreground mt-2">
-                  
-                </p>
+                <p className="text-muted-foreground mt-2"></p>
               </div>
               <div className="max-w-3xl mx-auto">
                 <ImageCarousel images={certificationImages} />
@@ -538,9 +533,13 @@ export default function Home() {
               </div>
             </div>
 
-            {/* System Diagram */}
-            <div className="mb-12">
-              <SystemDiagram />
+            {/* System Description */}
+            <div className="mb-12 max-w-3xl mx-auto bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-100">
+              <p className="text-lg">
+                Sistem AUTO Spill Over memastikan pertumbuhan jaringan Anda dengan cara yang efektif dan efisien. Upline
+                senior akan membantu Anda mendapatkan downline, sehingga Anda tidak perlu memulai dari nol dan dapat
+                lebih cepat mengembangkan bisnis Anda.
+              </p>
             </div>
 
             <div className="grid gap-10 lg:grid-cols-2">
