@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    /* Stronger Purple as primary color */
+    --primary: 265 95% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Blue as secondary color */
+    --secondary: 217 91% 60%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Green as accent color */
+    --accent: 142 71% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 265 95% 45%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    /* Stronger Purple as primary color */
+    --primary: 265 95% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Blue as secondary color */
+    --secondary: 217 91% 65%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Green as accent color */
+    --accent: 142 71% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 265 95% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add gradient backgrounds with stronger purple */
+.bg-gradient-hero {
+  background: linear-gradient(135deg, hsl(265, 95%, 95%) 0%, hsl(217, 91%, 95%) 100%);
+}
+
+.bg-gradient-section {
+  background: linear-gradient(135deg, hsl(217, 91%, 97%) 0%, hsl(142, 71%, 97%) 100%);
+}
+
+.bg-gradient-cta {
+  background: linear-gradient(135deg, hsl(265, 95%, 45%) 0%, hsl(217, 91%, 60%) 100%);
+}
+
+.bg-gradient-card {
+  background: linear-gradient(135deg, hsl(265, 95%, 97%) 0%, hsl(217, 91%, 97%) 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, hsl(265, 95%, 45%), hsl(217, 91%, 60%), hsl(142, 71%, 45%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Custom styles for carousel */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.carousel-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-dot.active {
+  background-color: white;
+}
+
+/* FAQ styles */
+.faq-item {
+  border-bottom: 1px solid hsl(var(--border));
+}
+
+.faq-question {
+  cursor: pointer;
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-answer {
+  padding-bottom: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-answer.open {
+  max-height: 500px;
+  padding-bottom: 1rem;
+}
+
+/* Testimonial card styles */
+.testimonial-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-card::before {
+  content: '"';
+  position: absolute;
+  top: -1rem;
+  left: 1rem;
+  font-size: 5rem;
+  color: rgba(139, 92, 246, 0.1);
+  font-family: serif;
+}
+
+/* System diagram styles */
+.system-diagram {
+  position: relative;
+}
+
+.diagram-node {
+  position: relative;
+  padding: 1rem;
+  border-radius: var(--radius);
+  background-color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  z-index: 10;
+}
+
+.diagram-arrow {
+  position: absolute;
+  width: 2px;
+  background-color: hsl(var(--primary));
+  z-index: 5;
+}
+
+.diagram-arrow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: -4px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 8px solid hsl(var(--primary));
+}
