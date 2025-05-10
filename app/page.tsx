@@ -378,8 +378,7 @@ export default function Home() {
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-bold mb-2">Produk Premium Lainnya</h3>
                   <p className="text-muted-foreground mb-4">
-                    Rangkaian produk suplemen kesehatan dan skincare dengan standar Internasional yang mendukung gaya
-                    hidup sehat dan berkualitas tinggi.
+                    Rangkaian produk suplemen kesehatan dan skincare 
                   </p>
                   <ul className="space-y-2">
                     {[
@@ -412,9 +411,9 @@ export default function Home() {
             {/* Certification Carousel */}
             <div className="mt-12">
               <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold">Legalitas & Uji Klinis</h3>
+                <h3 className="text-2xl font-bold">Legalitas Produk</h3>
                 <p className="text-muted-foreground mt-2">
-                  Produk kami telah teruji secara klinis dan memiliki sertifikasi resmi
+                  
                 </p>
               </div>
               <div className="max-w-3xl mx-auto">
