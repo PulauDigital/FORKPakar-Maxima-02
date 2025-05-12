@@ -50,7 +50,7 @@ export default function RootLayout({
       </head>
       <body className={inter.className}>
         {children}
-        <GoogleTagManager gtmId="GTM-XXXXXXX" /> {/* Replace with your actual GTM ID */}
+        <GoogleTagManager gtmId="GTM-5ZRGZ9G7" /> {/* Replace with your actual GTM ID */}
       </body>
     </html>
   )
