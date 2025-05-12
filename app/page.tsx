@@ -49,20 +49,20 @@ export default function Home() {
   // Certification images
   const certificationImages = [
     {
-      src: "/placeholder.svg?height=300&width=400",
-      alt: "Sertifikat BPOM",
+      src: "p/piagam_apli_2023.jpg?height=300&width=400",
+      alt: "Piagam Apli",
     },
     {
-      src: "/placeholder.svg?height=300&width=400",
-      alt: "Sertifikat Halal MUI",
+      src: "/office_masaru_emoto_lcc.jpeg?height=300&width=400",
+      alt: "Sertifikat Masaru Emoto Japan",
     },
     {
-      src: "/placeholder.svg?height=300&width=400",
-      alt: "Hasil Uji Klinis",
+      src: "/Superior_taste_Award_2.png?height=300&width=400",
+      alt: "Sertifikat Superior Taste Award",
     },
     {
-      src: "/placeholder.svg?height=300&width=400",
-      alt: "Sertifikat ISO 9001",
+      src: "/MeRA_certificate_2-01.png?height=300&width=400",
+      alt: "Sertifikat Mera",
     },
   ]
 
@@ -159,7 +159,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/placeholder.svg?height=550&width=550"
+                  src="/join maxima.jpg?height=550&width=550"
                   width={550}
                   height={550}
                   alt="MAXIMA Plan Business Opportunity"
@@ -285,7 +285,7 @@ export default function Home() {
                       </div>
                       <h3 className="text-xl font-bold">Komisi Matching</h3>
                     </div>
-                    <p className="text-3xl font-bold text-blue-600 mb-2">Rp 500.000</p>
+                    <p className="text-3xl font-bold text-blue-600 mb-2">Potensi Income Rp 175.375.000/Hari</p>
                     <p className="text-muted-foreground">Bonus yang besarnya adalah 10% dari total bonus pairing 5 Generasi</p>
                   </CardContent>
                 </Card>
@@ -352,7 +352,7 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="relative h-60">
                   <Image
-                    src="/placeholder.svg?height=240&width=400"
+                    src="/drinking.png?height=240&width=400"
                     fill
                     alt="Milagros Detox Water"
                     className="object-contain"
@@ -395,7 +395,7 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="relative h-60">
                   <Image
-                    src="/placeholder.svg?height=240&width=400"
+                    src="/all-produk-2024-d.png?height=240&width=400"
                     fill
                     alt="Produk Premium Lainnya"
                     className="object-contain"
@@ -679,8 +679,8 @@ export default function Home() {
               <Link href="https://wa.me/6282260882389" className="hover:underline">
                 WhatsApp: +62 822-6088-2389
               </Link>
-              <Link href="mailto:info@pakarmaxima.com" className="hover:underline">
-                Email: info@pakarmaxima.my.id
+              <Link href="mailto:kartonostmilagros@gmail.com" className="hover:underline">
+                Email: kartonostmilagros@gmail.com
               </Link>
             </nav>
           </div>
