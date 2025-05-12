@@ -244,10 +244,10 @@ export default function Home() {
                       <div className="p-2 rounded-full bg-purple-100">
                         <Gift className="h-6 w-6 text-purple-600" />
                       </div>
-                      <h3 className="text-xl font-bold">Bonus Sponsor</h3>
+                      <h3 className="text-xl font-bold">Komisi Sponsor</h3>
                     </div>
                     <p className="text-3xl font-bold text-purple-600 mb-2">Rp 300.000</p>
-                    <p className="text-muted-foreground">Setiap kali Anda mengajak orang untuk bergabung</p>
+                    <p className="text-muted-foreground">Komisi Perorang / HU</p>
                   </CardContent>
                 </Card>
 
@@ -257,10 +257,36 @@ export default function Home() {
                       <div className="p-2 rounded-full bg-blue-100">
                         <BarChart className="h-6 w-6 text-blue-600" />
                       </div>
-                      <h3 className="text-xl font-bold">Bonus Level</h3>
+                      <h3 className="text-xl font-bold">Komisi Level</h3>
                     </div>
                     <p className="text-3xl font-bold text-blue-600 mb-2">Rp 500.000</p>
-                    <p className="text-muted-foreground">Untuk setiap omset yang tercapai, tanpa batas kedalaman</p>
+                    <p className="text-muted-foreground">Infinity Depth (Berlaku Kedalaman tak Terhingga</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden border-blue-300 shadow-sm">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-2 rounded-full bg-blue-100">
+                        <BarChart className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <h3 className="text-xl font-bold">Komisi Pairing</h3>
+                    </div>
+                    <p className="text-3xl font-bold text-blue-600 mb-2">Rp 150.000</p>
+                    <p className="text-muted-foreground">Bonus yang dihasilkan dari setiap terbentuknya pasangan ke-2</p>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden border-blue-300 shadow-sm">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-2 rounded-full bg-blue-100">
+                        <BarChart className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <h3 className="text-xl font-bold">Komisi Matching</h3>
+                    </div>
+                    <p className="text-3xl font-bold text-blue-600 mb-2">Rp 500.000</p>
+                    <p className="text-muted-foreground">Bonus yang besarnya adalah 10% dari total bonus pairing 5 Generasi</p>
                   </CardContent>
                 </Card>
 
@@ -272,9 +298,10 @@ export default function Home() {
                       </div>
                       <h3 className="text-xl font-bold">Reward</h3>
                     </div>
-                    <p className="text-3xl font-bold text-green-600 mb-2">Hingga Rp 2.4 Miliar</p>
+                    <p className="text-3xl font-bold text-green-600 mb-2">Total sampai Rp 2.4 Miliar</p>
                     <p className="text-muted-foreground">
-                      Bagi mereka yang mencapai target tertentu, dengan reward yang semakin besar sesuai pencapaian Anda
+                      Bonus yang akan diberikan kepada Anda jika terjadi pertumbuhan jaringan kiri dan kanan
+                      sesuai dengan ketentuan yang berlaku
                     </p>
                   </CardContent>
                 </Card>
@@ -524,11 +551,11 @@ export default function Home() {
                   Sistem Unik
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Konsep AUTO Spill Over yang Revolusioner
+                  Auto Lock Member ( Spill Over )
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  Dengan sistem AUTO Spill Over, Anda dijamin 100% pasti mendapat mitra dan omset. Sistem ini memastikan
-                  Anda tidak akan pernah merasa sendirian dalam bisnis ini.
+                  Dengan sistem Spill Over, Anda dijamin 100% pasti mendapat downline dan omset. Sistem ini memastikan
+                 Jaringan Anda mendapatkan limpahan member.
                 </p>
               </div>
             </div>
@@ -536,21 +563,18 @@ export default function Home() {
             {/* System Description */}
             <div className="mb-12 max-w-3xl mx-auto bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-100">
               <p className="text-lg">
-                Sistem AUTO Spill Over memastikan pertumbuhan jaringan Anda dengan cara yang efektif dan efisien. Upline
-                senior akan membantu Anda mendapatkan downline, sehingga Anda tidak perlu memulai dari nol dan dapat
-                lebih cepat mengembangkan bisnis Anda.
-              </p>
+                Sistem ini memastikan pertumbuhan jaringan Anda lebih efektif dan efisien.
+             </p>
             </div>
 
             <div className="grid gap-10 lg:grid-cols-2">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold">Keunggulan Sistem AUTO Spill Over</h3>
+                <h3 className="text-2xl font-bold">Keunggulan Maxima Plan</h3>
                 <ul className="space-y-4">
                   {[
-                    "Downline akan di-spill over dari upline yang lebih senior",
-                    "Kesempatan lebih besar untuk mendapatkan mitra tanpa harus bekerja keras sendirian",
+                    "Kemungkinan lebih cepat mendapatkan downline dengan kerja tim yang solid",
                     "Jaminan mendapatkan omset melalui sistem yang terbukti",
-                    "Bukan bisnis MLM biasa, melainkan bisnis dengan konsep Affiliate Franchise Hybrid",
+                    "Bukan bisnis MLM biasa, melainkan bisnis dengan konsep Gotong Royong",
                     "Lebih simple, cepat, dan efisien untuk menghasilkan profit",
                     "Balik modal lebih cepat dengan sistem yang terstruktur",
                   ].map((point, index) => (
