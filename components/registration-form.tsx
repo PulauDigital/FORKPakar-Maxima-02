@@ -61,6 +61,16 @@ export default function RegistrationForm() {
         console.log("Email sent successfully")
       }
 
+      // Also send data to Mailketing's list (if needed)
+      // This is optional and depends on whether you want to add the user to a mailing list
+      try {
+        // You can add code here to subscribe the user to a Mailketing list
+        // This would be a separate API call to Mailketing's subscription endpoint
+      } catch (mailketingError) {
+        console.error("Error adding to Mailketing list:", mailketingError)
+        // Continue with the form submission even if this fails
+      }
+
       setIsSubmitting(false)
       setIsSubmitted(true)
 
