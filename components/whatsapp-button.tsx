@@ -34,7 +34,7 @@ export default function WhatsAppButton({ phoneNumber }: WhatsAppButtonProps) {
   }, [])
 
   const handleClick = () => {
-    window.open(`https://wa.me/${phoneNumber}`, "_blank")
+    window.open(`https://wa.me/6282260882389`, "_blank")
 
     // Track event with Meta Pixel
     if (typeof window !== "undefined" && (window as any).fbq) {

@@ -606,7 +606,7 @@ export default function Home() {
                   className="w-full bg-white text-primary hover:bg-white/90 border-2 border-primary mt-4"
                   asChild
                 >
-                  <Link href="https://wa.me/6285730331000">
+                  <Link href="https://wa.me/6282260882389">
                     <Phone className="mr-2 h-4 w-4 text-primary" /> Hubungi Kami di WhatsApp
                   </Link>
                 </Button>
@@ -652,11 +652,11 @@ export default function Home() {
           <div className="flex flex-col gap-2 md:gap-4">
             <p className="text-sm font-medium">Kontak</p>
             <nav className="flex flex-col gap-2 text-sm text-muted-foreground">
-              <Link href="https://wa.me/6285730331000" className="hover:underline">
-                WhatsApp: +62 857-3033-1000
+              <Link href="https://wa.me/6282260882389" className="hover:underline">
+                WhatsApp: +62 822-6088-2389
               </Link>
               <Link href="mailto:info@pakarmaxima.com" className="hover:underline">
-                Email: info@pakarmaxima.com
+                Email: info@pakarmaxima.my.id
               </Link>
             </nav>
           </div>
@@ -667,7 +667,7 @@ export default function Home() {
           </p>
         </div>
       </footer>
-      <WhatsAppButton phoneNumber="6285730331000" />
+      <WhatsAppButton phoneNumber="6282260882389" />
     </div>
   )
 }
