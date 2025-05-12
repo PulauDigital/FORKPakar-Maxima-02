@@ -395,7 +395,7 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="relative h-60">
                   <Image
-                    src="/all-produk-2024-d.png?height=240&width=400"
+                    src="/All-produk-2025.jpg?height=240&width=400"
                     fill
                     alt="Produk Premium Lainnya"
                     className="object-contain"
