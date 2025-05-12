@@ -49,7 +49,7 @@ export default function Home() {
   // Certification images
   const certificationImages = [
     {
-      src: "p/piagam_apli_2023.jpg?height=300&width=400",
+      src: "/piagam_apli_2023.jpg?height=300&width=400",
       alt: "Piagam Apli",
     },
     {
