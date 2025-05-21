@@ -4,9 +4,9 @@ import { ArrowRight, Check, Phone, Shield, Star, Users, Gift, Zap, BarChart, Awa
 import Image from "next/image"
 import Link from "next/link"
 import WhatsAppButton from "@/components/whatsapp-button"
-import RegistrationForm from "@/components/registration-form"
 import ImageCarousel from "@/components/image-carousel"
 import FAQSection from "@/components/faq-section"
+import RegistrationForm from "@/components/registration-form"
 
 export default function Home() {
   // Testimonial data
@@ -49,20 +49,20 @@ export default function Home() {
   // Certification images
   const certificationImages = [
     {
-      src: "/piagam_apli_2023.jpg?height=300&width=400",
-      alt: "Piagam Apli",
+      src: "/placeholder.svg?height=300&width=400",
+      alt: "Sertifikat BPOM",
     },
     {
-      src: "/office_masaru_emoto_lcc.jpeg?height=300&width=400",
-      alt: "Sertifikat Masaru Emoto Japan",
+      src: "/placeholder.svg?height=300&width=400",
+      alt: "Sertifikat Halal MUI",
     },
     {
-      src: "/Superior_taste_Award_2.png?height=300&width=400",
-      alt: "Sertifikat Superior Taste Award",
+      src: "/placeholder.svg?height=300&width=400",
+      alt: "Hasil Uji Klinis",
     },
     {
-      src: "/MeRA_certificate_2-01.png?height=300&width=400",
-      alt: "Sertifikat Mera",
+      src: "/placeholder.svg?height=300&width=400",
+      alt: "Sertifikat ISO 9001",
     },
   ]
 
@@ -159,7 +159,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/join maxima.jpg?height=550&width=550"
+                  src="/placeholder.svg?height=550&width=550"
                   width={550}
                   height={550}
                   alt="MAXIMA Plan Business Opportunity"
@@ -244,10 +244,10 @@ export default function Home() {
                       <div className="p-2 rounded-full bg-purple-100">
                         <Gift className="h-6 w-6 text-purple-600" />
                       </div>
-                      <h3 className="text-xl font-bold">Komisi Sponsor</h3>
+                      <h3 className="text-xl font-bold">Bonus Sponsor</h3>
                     </div>
                     <p className="text-3xl font-bold text-purple-600 mb-2">Rp 300.000</p>
-                    <p className="text-muted-foreground">Komisi Perorang / HU</p>
+                    <p className="text-muted-foreground">Setiap kali Anda mengajak orang untuk bergabung</p>
                   </CardContent>
                 </Card>
 
@@ -257,36 +257,10 @@ export default function Home() {
                       <div className="p-2 rounded-full bg-blue-100">
                         <BarChart className="h-6 w-6 text-blue-600" />
                       </div>
-                      <h3 className="text-xl font-bold">Komisi Level</h3>
+                      <h3 className="text-xl font-bold">Bonus Level</h3>
                     </div>
                     <p className="text-3xl font-bold text-blue-600 mb-2">Rp 500.000</p>
-                    <p className="text-muted-foreground">Infinity Depth (Berlaku Kedalaman tak Terhingga</p>
-                  </CardContent>
-                </Card>
-
-                <Card className="overflow-hidden border-blue-300 shadow-sm">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="p-2 rounded-full bg-blue-100">
-                        <BarChart className="h-6 w-6 text-blue-600" />
-                      </div>
-                      <h3 className="text-xl font-bold">Komisi Pairing</h3>
-                    </div>
-                    <p className="text-3xl font-bold text-blue-600 mb-2">Rp 150.000</p>
-                    <p className="text-muted-foreground">Bonus yang dihasilkan dari setiap terbentuknya pasangan ke-2</p>
-                  </CardContent>
-                </Card>
-
-                <Card className="overflow-hidden border-blue-300 shadow-sm">
-                  <CardContent className="p-6">
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="p-2 rounded-full bg-blue-100">
-                        <BarChart className="h-6 w-6 text-blue-600" />
-                      </div>
-                      <h3 className="text-xl font-bold">Komisi Matching</h3>
-                    </div>
-                    <p className="text-3xl font-bold text-blue-600 mb-2">Potensi Income Rp 175.375.000/Hari</p>
-                    <p className="text-muted-foreground">Bonus yang besarnya adalah 10% dari total bonus pairing 5 Generasi</p>
+                    <p className="text-muted-foreground">Untuk setiap omset yang tercapai, tanpa batas kedalaman</p>
                   </CardContent>
                 </Card>
 
@@ -298,10 +272,39 @@ export default function Home() {
                       </div>
                       <h3 className="text-xl font-bold">Reward</h3>
                     </div>
-                    <p className="text-3xl font-bold text-green-600 mb-2">Total sampai Rp 2.4 Miliar</p>
+                    <p className="text-3xl font-bold text-green-600 mb-2">Hingga Rp 2.4 Miliar</p>
                     <p className="text-muted-foreground">
-                      Bonus yang akan diberikan kepada Anda jika terjadi pertumbuhan jaringan kiri dan kanan
-                      sesuai dengan ketentuan yang berlaku
+                      Bagi mereka yang mencapai target tertentu, dengan reward yang semakin besar sesuai pencapaian Anda
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden border-purple-300 shadow-sm">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-2 rounded-full bg-purple-100">
+                        <Users className="h-6 w-6 text-purple-600" />
+                      </div>
+                      <h3 className="text-xl font-bold">Komisi Pairing</h3>
+                    </div>
+                    <p className="text-3xl font-bold text-purple-600 mb-2">Rp 100.000</p>
+                    <p className="text-muted-foreground">
+                      Untuk setiap pasangan mitra baru di kaki kiri dan kanan dalam jaringan Anda
+                    </p>
+                  </CardContent>
+                </Card>
+
+                <Card className="overflow-hidden border-blue-300 shadow-sm">
+                  <CardContent className="p-6">
+                    <div className="flex items-center gap-4 mb-4">
+                      <div className="p-2 rounded-full bg-blue-100">
+                        <Zap className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <h3 className="text-xl font-bold">Komisi Matching</h3>
+                    </div>
+                    <p className="text-3xl font-bold text-blue-600 mb-2">Rp 50.000</p>
+                    <p className="text-muted-foreground">
+                      Bonus tambahan dari komisi pairing yang diperoleh downline Anda hingga 10 level
                     </p>
                   </CardContent>
                 </Card>
@@ -352,7 +355,7 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="relative h-60">
                   <Image
-                    src="/drinking.png?height=240&width=400"
+                    src="/placeholder.svg?height=240&width=400"
                     fill
                     alt="Milagros Detox Water"
                     className="object-contain"
@@ -395,7 +398,7 @@ export default function Home() {
               <Card className="overflow-hidden">
                 <div className="relative h-60">
                   <Image
-                    src="/All-produk-2025.jpg?height=240&width=400"
+                    src="/placeholder.svg?height=240&width=400"
                     fill
                     alt="Produk Premium Lainnya"
                     className="object-contain"
@@ -551,11 +554,11 @@ export default function Home() {
                   Sistem Unik
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl/tight">
-                  Auto Lock Member ( Spill Over )
+                  Konsep AUTO Spill Over yang Revolusioner
                 </h2>
                 <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed">
-                  Dengan sistem Spill Over, Anda dijamin 100% pasti mendapat downline dan omset. Sistem ini memastikan
-                 Jaringan Anda mendapatkan limpahan member.
+                  Dengan sistem AUTO Spill Over, Anda dijamin 100% pasti mendapat mitra dan omset. Sistem ini memastikan
+                  Anda tidak akan pernah merasa sendirian dalam bisnis ini.
                 </p>
               </div>
             </div>
@@ -563,18 +566,21 @@ export default function Home() {
             {/* System Description */}
             <div className="mb-12 max-w-3xl mx-auto bg-gradient-to-r from-purple-50 to-blue-50 p-6 rounded-lg border border-purple-100">
               <p className="text-lg">
-                Sistem ini memastikan pertumbuhan jaringan Anda lebih efektif dan efisien.
-             </p>
+                Sistem AUTO Spill Over memastikan pertumbuhan jaringan Anda dengan cara yang efektif dan efisien. Upline
+                senior akan membantu Anda mendapatkan downline, sehingga Anda tidak perlu memulai dari nol dan dapat
+                lebih cepat mengembangkan bisnis Anda.
+              </p>
             </div>
 
             <div className="grid gap-10 lg:grid-cols-2">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold">Keunggulan Maxima Plan</h3>
+                <h3 className="text-2xl font-bold">Keunggulan Sistem AUTO Spill Over</h3>
                 <ul className="space-y-4">
                   {[
-                    "Kemungkinan lebih cepat mendapatkan downline dengan kerja tim yang solid",
+                    "Downline akan di-spill over dari upline yang lebih senior",
+                    "Kesempatan lebih besar untuk mendapatkan mitra tanpa harus bekerja keras sendirian",
                     "Jaminan mendapatkan omset melalui sistem yang terbukti",
-                    "Bukan bisnis MLM biasa, melainkan bisnis dengan konsep Gotong Royong",
+                    "Bukan bisnis MLM biasa, melainkan bisnis dengan konsep Affiliate Franchise Hybrid",
                     "Lebih simple, cepat, dan efisien untuk menghasilkan profit",
                     "Balik modal lebih cepat dengan sistem yang terstruktur",
                   ].map((point, index) => (
@@ -679,8 +685,8 @@ export default function Home() {
               <Link href="https://wa.me/6282260882389" className="hover:underline">
                 WhatsApp: +62 822-6088-2389
               </Link>
-              <Link href="mailto:kartonostmilagros@gmail.com" className="hover:underline">
-                Email: kartonostmilagros@gmail.com
+              <Link href="mailto:info@pakarmaxima.com" className="hover:underline">
+                Email: info@pakarmaxima.my.id
               </Link>
             </nav>
           </div>

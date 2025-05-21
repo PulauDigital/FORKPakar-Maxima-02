@@ -8,7 +8,6 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Loader2, Check } from "lucide-react"
-import { toast } from "@/hooks/use-toast"
 
 export default function RegistrationForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -31,44 +30,17 @@ export default function RegistrationForm() {
     setIsSubmitting(true)
 
     try {
-      // Track form submission with Meta Pixel
-      if (typeof window !== "undefined" && (window as any).fbq) {
-        ;(window as any).fbq("track", "Lead")
+      // Track event with Meta Pixel if available
+      if (typeof window !== "undefined" && window.fbq) {
+        window.fbq("track", "Lead")
       }
 
-      // Track form submission with Google Tag Manager
-      if (typeof window !== "undefined" && (window as any).dataLayer) {
-        ;(window as any).dataLayer.push({
+      // Track event with Google Tag Manager if available
+      if (typeof window !== "undefined" && window.dataLayer) {
+        window.dataLayer.push({
           event: "form_submission",
           form_name: "registration_form",
         })
-      }
-
-      // Send email via API
-      const emailResponse = await fetch("/api/send-email", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ formData }),
-      })
-
-      if (!emailResponse.ok) {
-        const errorData = await emailResponse.json()
-        console.error("Error sending email:", errorData)
-        // Continue with the form submission even if email fails
-      } else {
-        console.log("Email sent successfully")
-      }
-
-      // Also send data to Mailketing's list (if needed)
-      // This is optional and depends on whether you want to add the user to a mailing list
-      try {
-        // You can add code here to subscribe the user to a Mailketing list
-        // This would be a separate API call to Mailketing's subscription endpoint
-      } catch (mailketingError) {
-        console.error("Error adding to Mailketing list:", mailketingError)
-        // Continue with the form submission even if this fails
       }
 
       setIsSubmitting(false)
@@ -85,18 +57,14 @@ Domisili: ${formData.city}
 ${formData.message ? `Pesan: ${formData.message}` : ""}
       `.trim()
 
-      // Redirect to WhatsApp
+      // Redirect to WhatsApp after a short delay
       setTimeout(() => {
-        window.open(`https://wa.me/6282260882389?text=${encodeURIComponent(message)}`, "_blank")
+        const whatsappUrl = `https://wa.me/6282260882389?text=${encodeURIComponent(message)}`
+        window.open(whatsappUrl, "_blank")
       }, 1000)
     } catch (error) {
       console.error("Error during form submission:", error)
       setIsSubmitting(false)
-      toast({
-        title: "Error",
-        description: "Terjadi kesalahan saat mengirim formulir. Silakan coba lagi.",
-        variant: "destructive",
-      })
     }
   }
 
