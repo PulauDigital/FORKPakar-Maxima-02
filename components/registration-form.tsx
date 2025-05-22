@@ -59,7 +59,7 @@ ${formData.message ? `Pesan: ${formData.message}` : ""}
 
       // Redirect to WhatsApp after a short delay
       setTimeout(() => {
-        const whatsappUrl = `https://wa.me/6282260882389?text=${encodeURIComponent(message)}`
+        const whatsappUrl = `https://wa.me/6285233447500?text=${encodeURIComponent(message)}`
         window.open(whatsappUrl, "_blank")
       }, 1000)
     } catch (error) {
