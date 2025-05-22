@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/bosmilagros-projects/v0-pakar-maxima-02](https://vercel.com/bosmilagros-projects/v0-pakar-maxima-02)**
+**)**
 
 ## Build your app
 
