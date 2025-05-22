@@ -159,7 +159,7 @@ export default function Home() {
               </div>
               <div className="flex items-center justify-center">
                 <Image
-                  src="/join maxima.jpg?height=550&width=550"
+                  src="/join maxima plan.jpg?height=550&width=550"
                   width={550}
                   height={550}
                   alt="MAXIMA Plan Business Opportunity"
